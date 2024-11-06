@@ -12,7 +12,7 @@
     </div>
     <div id="IMAGE34" class="ladi-element">
         <div class="ladi-image">
-            <div class="ladi-image-background"></div>
+            <div class="ladi-image-background" style="background-image: url({{ showImage($banner->image_i34) }}"></div>
         </div>
     </div>
 </div>

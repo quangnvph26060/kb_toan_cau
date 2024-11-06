@@ -2,7 +2,7 @@
 <div class="ladi-container">
     <div id="IMAGE21" class="ladi-element">
         <div class="ladi-image">
-            <div class="ladi-image-background"></div>
+            <div class="ladi-image-background" style="background-image: url({{ showImage($banner->image_i21) }}"></div>
         </div>
     </div>
     <div id="FORM4" class="ladi-element">

@@ -13,6 +13,7 @@
 
     $(document).ready(function() {
         $(document).on('submit', '.ladi-form', function() {
+
             $.ajax({
                 url: "{{ route('frontend.contact') }}",
                 type: 'POST',
@@ -43,7 +44,7 @@
     }
 </script>
 
-{{-- <script src="{{ asset('frontend/assets/js/ladipagev3.min.js') }}"></script> --}}
+<script src="{{ asset('frontend/assets/js/ladipagev3.min.js') }}"></script>
 
 <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
 

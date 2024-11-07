@@ -1,5 +1,5 @@
 <meta charset="UTF-8" />
-<title>Khám &#38; Điều Trị Da Liễu</title>
+<title>{{ $config->title_seo ?? $config->name }}</title>
 <meta http-equiv="Cache-Control" content="no-cache" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Expires" content="-1" />
@@ -7,6 +7,8 @@
 <meta name="description" content="Khám &#38; Điều Trị Da Liễu" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+
+<link rel="icon" href="{{ showImage($config->icon) }}" type="image/png" />
 
 <meta property="og:title" content="Khám &#38; Điều Trị Da Liễu" />
 <meta property="og:type" content="website" />

@@ -31,9 +31,11 @@ class ConfigWebsiteController extends Controller
             'description_seo' => 'nullable|string|max:1000',
             'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'icon' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'branch_names.*' => 'required|string|max:255',
-            'branch_addresses.*' => 'required|string|max:500',
-            'deleted_branch_ids.*' => 'nullable|exists:branches,id' // Ensure the deleted branch IDs are valid
+            'address' => 'required|string|max:500',
+            'link_fb' => 'nullable|string|max:255',
+            // 'branch_names.*' => 'required|string|max:255',
+            // 'branch_addresses.*' => 'required|string|max:500',
+            // 'deleted_branch_ids.*' => 'nullable|exists:branches,id' // Ensure the deleted branch IDs are valid
         ]);
 
         $config = Config::first();
@@ -51,33 +53,33 @@ class ConfigWebsiteController extends Controller
             $validated['icon'] = $iconPath;
         }
 
-        // Handle the branches update/addition
-        foreach ($request->branch_names as $index => $branchName) {
-            // Find existing branch by ID or create new one
-            $branch = Branch::find($index);
-            if ($branch) {
-                $branch->name = $branchName;
-                $branch->address = explode('|', $request->branch_addresses[$index]);
-                $branch->save();
-            } else {
-                // New branch
-                $branch = new Branch();
-                $branch->name = $branchName;
-                $branch->address = explode('|', $request->branch_addresses[$index]);
-                $branch->config_id = $config->id;
-                $branch->save();
-            }
-        }
+        // // Handle the branches update/addition
+        // foreach ($request->branch_names as $index => $branchName) {
+        //     // Find existing branch by ID or create new one
+        //     $branch = Branch::find($index);
+        //     if ($branch) {
+        //         $branch->name = $branchName;
+        //         $branch->address = explode('|', $request->branch_addresses[$index]);
+        //         $branch->save();
+        //     } else {
+        //         // New branch
+        //         $branch = new Branch();
+        //         $branch->name = $branchName;
+        //         $branch->address = explode('|', $request->branch_addresses[$index]);
+        //         $branch->config_id = $config->id;
+        //         $branch->save();
+        //     }
+        // }
 
         // Delete branches that are marked for removal
-        if ($request->has('deleted_branch_ids')) {
-            foreach ($request->deleted_branch_ids as $branchId) {
-                $branch = Branch::find($branchId);
-                if ($branch) {
-                    $branch->delete();
-                }
-            }
-        }
+        // if ($request->has('deleted_branch_ids')) {
+        //     foreach ($request->deleted_branch_ids as $branchId) {
+        //         $branch = Branch::find($branchId);
+        //         if ($branch) {
+        //             $branch->delete();
+        //         }
+        //     }
+        // }
 
         // Update the main config with the new data
         $config->update($validated);

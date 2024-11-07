@@ -3,16 +3,16 @@
 @section('title', $title)
 
 @section('content')
-@if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
 
-@endif
+    @endif
     <form action="" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
@@ -51,6 +51,22 @@
                                     <label for="tax_code" class="form-label">Mã số thuế</label>
                                     <input type="text" class="form-control" id="tax_code" name="tax_code"
                                         placeholder="Mã số thuế" value="{{ old('tax_code', $config->tax_code) }}" />
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 mt-3">
+                                <div class="form-group">
+                                    <label for="address" class="form-label">Địa chỉ</label>
+                                    <input type="text" class="form-control" id="address" name="address"
+                                        placeholder="Địa chỉ" value="{{ old('address', $config->address) }}" />
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 mt-3">
+                                <div class="form-group">
+                                    <label for="link_fb" class="form-label">Link Facebook</label>
+                                    <input type="text" class="form-control" id="link_fb" name="link_fb"
+                                        placeholder="Link Facebook" value="{{ old('link_fb', $config->link_fb) }}" />
                                 </div>
                             </div>
 
@@ -95,7 +111,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                {{-- <div class="card">
                     <div class="card-header">
                         <h4 class="card-title">Thêm Cơ Sở</h4>
                     </div>
@@ -124,7 +140,7 @@
                             @endforeach
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
             <div class="col-lg-3">
@@ -165,12 +181,12 @@
 
 @endsection
 
-@push('scripts')
+{{-- @push('scripts')
     <script>
         $(document).ready(function() {
-    // Event listener for adding a new branch row
-    $('.add-branch').on('click', function() {
-        const branchItem = `
+            // Event listener for adding a new branch row
+            $('.add-branch').on('click', function() {
+                const branchItem = `
             <div class="branch-item row mb-3">
                 <div class="col-lg-5">
                     <input type="text" class="form-control" name="branch_names[]" placeholder="Tên cơ sở" />
@@ -184,25 +200,24 @@
                 </div>
             </div>`;
 
-        $('#branch-container').append(branchItem);
-    });
+                $('#branch-container').append(branchItem);
+            });
 
-    // Event listener for removing a branch row
-    $('#branch-container').on('click', '.remove-branch', function() {
-        const branchItem = $(this).closest('.branch-item');
-        const branchId = branchItem.find('input[name^="branch_names"]').data('id');
+            // Event listener for removing a branch row
+            $('#branch-container').on('click', '.remove-branch', function() {
+                const branchItem = $(this).closest('.branch-item');
+                const branchId = branchItem.find('input[name^="branch_names"]').data('id');
 
-        if (branchId) {
-            // If there's an ID, mark it for deletion
-            $('<input>').attr({
-                type: 'hidden',
-                name: 'deleted_branch_ids[]', // This array will contain IDs of deleted branches
-                value: branchId
-            }).appendTo('form');
-        }
-        branchItem.remove(); // Remove the UI element
-    });
-});
-
+                if (branchId) {
+                    // If there's an ID, mark it for deletion
+                    $('<input>').attr({
+                        type: 'hidden',
+                        name: 'deleted_branch_ids[]', // This array will contain IDs of deleted branches
+                        value: branchId
+                    }).appendTo('form');
+                }
+                branchItem.remove(); // Remove the UI element
+            });
+        });
     </script>
-@endpush
+@endpush --}}

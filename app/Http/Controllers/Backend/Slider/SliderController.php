@@ -100,7 +100,7 @@ class SliderController extends Controller
         }
 
         DB::beginTransaction();
-        $image = saveImages($request, 'file', 'sliders', 800, 800);
+        $image = saveImages($request, 'file', 'sliders', 1140, 640);
         try {
             if ($request->hasFile('file')) {
                 if ($image) {

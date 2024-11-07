@@ -13,7 +13,7 @@
 
 
 
-                    @foreach ($config->branches as $branch)
+                    {{-- @foreach ($config->branches as $branch)
                         <div class="branch">
                             <h2>{{ $branch->name }}</h2>
                             <ul>
@@ -23,7 +23,7 @@
 
                             </ul>
                         </div>
-                    @endforeach
+                    @endforeach --}}
 
                     {{-- <div class="branch">
                         <h2>Cơ Sở Bắc Ninh</h2>
@@ -31,9 +31,9 @@
                     </div> --}}
 
                     <div class="contact-info">
-                        <p><span class="icon">📞</span> Hotline: {{$config->hotline}}</p>
-                        <p><span class="icon">📄</span> MS thuế: {{$config->tax_code}}</p>
-                        <p><span class="icon">🔒</span> Chính sách bảo mật thông tin</p>
+                        <p style="display: flex"><span class="icon">🏠</span> <span>Địa chỉ: {{ $config->address }}</span></p>
+                        <p><span class="icon">📞</span> Hotline: {{ $config->hotline }}</p>
+                        <p><span class="icon">📄</span> MS thuế: {{ $config->tax_code }}</p>
                     </div>
 
                     <div class="footer-note">

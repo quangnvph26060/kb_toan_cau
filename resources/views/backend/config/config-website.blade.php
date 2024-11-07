@@ -70,7 +70,21 @@
                                 </div>
                             </div>
 
+                            <div class="col-lg-12 mt-3">
+                                <div class="form-group">
+                                    <label for="link_video_v1" class="form-label">Link Video Header</label>
+                                    <input type="text" class="form-control" id="link_video_v1" name="link_video_v1"
+                                        placeholder="Link Video Header" value="{{ old('link_video_v1', $config->link_video_v1) }}" />
+                                </div>
+                            </div>
 
+                            <div class="col-lg-12 mt-3">
+                                <div class="form-group">
+                                    <label for="link_video_v2" class="form-label">Link Video Body</label>
+                                    <input type="text" class="form-control" id="link_video_v2" name="link_video_v2"
+                                        placeholder="Link Video Body" value="{{ old('link_video_v2', $config->link_video_v2) }}" />
+                                </div>
+                            </div>
 
                         </div>
                     </div>

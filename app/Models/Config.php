@@ -20,7 +20,9 @@ class Config extends Model
         'hotline',
         'tax_code',
         'address',
-        'link_fb'
+        'link_fb',
+        'link_video_v1',
+        'link_video_v2',
     ];
 
     public function branches()

@@ -11,9 +11,6 @@
         </div>
     </div>
     <div id="IMAGE34" class="ladi-element">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FT4tLpLgJuY?si=OjBNhAdhrnmg0auG"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       {!!$config->link_video_v2!!}
     </div>
 </div>

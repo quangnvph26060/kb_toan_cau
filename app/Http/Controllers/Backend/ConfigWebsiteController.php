@@ -33,6 +33,8 @@ class ConfigWebsiteController extends Controller
             'icon' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'address' => 'required|string|max:500',
             'link_fb' => 'nullable|string|max:255',
+            'link_video_v1' => 'nullable|string',
+            'link_video_v2' => 'nullable|string',
             // 'branch_names.*' => 'required|string|max:255',
             // 'branch_addresses.*' => 'required|string|max:500',
             // 'deleted_branch_ids.*' => 'nullable|exists:branches,id' // Ensure the deleted branch IDs are valid

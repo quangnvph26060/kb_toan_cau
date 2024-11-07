@@ -18,7 +18,9 @@ class Config extends Model
         'description_seo',
         'keywords_seo',
         'hotline',
-        'tax_code'
+        'tax_code',
+        'address',
+        'link_fb'
     ];
 
     public function branches()

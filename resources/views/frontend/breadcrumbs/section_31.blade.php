@@ -11,8 +11,9 @@
         </div>
     </div>
     <div id="IMAGE34" class="ladi-element">
-        <div class="ladi-image">
-            <div class="ladi-image-background" style="background-image: url({{ showImage($banner->image_i34) }}"></div>
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FT4tLpLgJuY?si=OjBNhAdhrnmg0auG"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </div>

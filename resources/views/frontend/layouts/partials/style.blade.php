@@ -56,7 +56,11 @@
 
     .contact-info {
         font-size: 14px;
-        line-height: 1.8;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .contact-info p{
         margin-bottom: 20px;
     }
 

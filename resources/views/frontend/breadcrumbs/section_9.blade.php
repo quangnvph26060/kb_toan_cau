@@ -4,7 +4,7 @@
         <div class="ladi-button ladi-transition">
             <div class="ladi-button-background"></div>
             <div id="BUTTON_TEXT3" class="ladi-element ladi-button-headline">
-                <p class="ladi-headline ladi-transition">NHẬN TƯ VẤN<br /></p>
+                <p class="ladi-headline ladi-transition"><a href="#contact">NHẬN TƯ VẤN</a><br /></p>
             </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <div class="ladi-section-background"></div>
-<div class="ladi-container">
+<div class="ladi-container" id="contact2">
     <div id="IMAGE21" class="ladi-element">
         <div class="ladi-image">
             <div class="ladi-image-background" style="background-image: url({{ showImage($banner->image_i21) }}"></div>

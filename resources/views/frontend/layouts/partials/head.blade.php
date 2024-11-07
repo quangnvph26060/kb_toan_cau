@@ -12,6 +12,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:description" content="Khám &#38; Điều Trị Da Liễu" />
 <meta name="format-detection" content="telephone=no" />
+<meta name="csrf-token" content="{{ csrf_token() }}" />
 
 
 @include('frontend/layouts/partials/style')

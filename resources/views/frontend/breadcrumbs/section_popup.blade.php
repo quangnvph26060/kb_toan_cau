@@ -1,4 +1,4 @@
- <div class="ladi-section-background"></div>
+ {{-- <div class="ladi-section-background"></div>
  <div class="ladi-container">
      <div id="POPUP3" class="ladi-element">
          <div class="ladi-popup">
@@ -51,4 +51,4 @@
              </div>
          </div>
      </div>
- </div>
+ </div> --}}

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\Banner\BannerController;
+use App\Http\Controllers\Backend\ConfigWebsiteController;
 use App\Http\Controllers\Backend\Slider\SliderController;
 use App\Http\Controllers\Frontend\Home\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -30,18 +31,28 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::controller(SliderController::class)->name('sliders.')->group(function () {
             Route::get('sliders', 'create')->name('create');
-            Route::post('sliders', 'store')->name('store');
             Route::post('sliders/upload-image', 'uploadImage')->name('uploadImage');
             Route::delete('sliders/{id}', 'destroy')->name('destroy');
+
+            Route::get('sliders/v2', 'create_v2')->name('create_v2');
         });
 
         Route::controller(BannerController::class)->name('banners.')->group(function () {
             Route::get('banners', 'showPageBanner')->name('edit');
             Route::post('banners', 'store')->name('store');
         });
+
+        Route::controller(ConfigWebsiteController::class)->name('website.')->group(function () {
+            Route::get('website', 'edit')->name('edit');
+            Route::put('website', 'update')->name('update');
+            route::get('contacts', 'contact')->name('contact');
+            route::get('mails', 'mails')->name('mails');
+            route::post('mails', 'send');
+        });
     });
 });
 
 Route::controller(HomeController::class)->name('frontend.')->group(function () {
     route::get('/', 'index')->name('home');
+    route::post('contact', 'contact')->name('contact');
 });

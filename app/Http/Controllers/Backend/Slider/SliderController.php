@@ -24,10 +24,19 @@ class SliderController extends Controller
      */
     public function create()
     {
-        $title = 'Cấu Hình Trình Chiếu';
-        $sliders = Slider::latest()->get();
+        $title = 'Cấu Hình Trình Chiếu Đầu Trang';
+        $sliders = Slider::getType('header')->latest()->get();
+
 
         return view('backend.sliders.create', compact('title', 'sliders'));
+    }
+
+    public function create_v2()
+    {
+        $title = 'Cấu Hình Trình Chiếu Thân Trang';
+        $sliders = Slider::getType( 'body')->latest()->get();
+
+        return view('backend.sliders.create_v2', compact('title', 'sliders'));
     }
 
     /**
@@ -97,6 +106,7 @@ class SliderController extends Controller
                 if ($image) {
                     $imagePath = Slider::create([
                         'image' => $image,
+                        'type' => $request->type,
                     ]);
                 }
                 DB::commit();

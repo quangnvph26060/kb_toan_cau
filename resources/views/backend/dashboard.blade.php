@@ -267,9 +267,6 @@
     <script src="{{ asset('backend/assets/libs/jsvectormap/js/jsvectormap.min.js') }}"></script>
     <script src="{{ asset('backend/assets/libs/jsvectormap/maps/world-merc.js') }}"></script>
 
-    <!--Swiper slider js-->
-    <script src="{{ asset('backend/assets/libs/swiper/swiper-bundle.min.js') }}"></script>
-
     <!-- Dashboard init -->
     <script src="{{ asset('backend/assets/js/pages/dashboard-ecommerce.init.js') }}"></script>
 @endpush

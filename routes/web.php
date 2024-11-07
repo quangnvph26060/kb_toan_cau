@@ -1,10 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Backend\Auth\AuthController;
+use App\Http\Controllers\Frontend\Home\HomeController;
 use App\Http\Controllers\Backend\Banner\BannerController;
 use App\Http\Controllers\Backend\ConfigWebsiteController;
 use App\Http\Controllers\Backend\Slider\SliderController;
-use App\Http\Controllers\Frontend\Home\HomeController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,31 +24,41 @@ Route::get('admin/', function () {
 
 Route::prefix('admin')->name('admin.')->group(function () {
 
-    Route::get('/', function () {
-        return view('backend.dashboard');
-    })->name('dashboard');
 
-    Route::prefix('configurations')->name('configurations.')->group(function () {
+    Route::middleware('guest')->group(function () {
+        route::get('login', [AuthController::class, 'login'])->name('login');
+        route::post('login', [AuthController::class, 'authenticate']);
+    });
 
-        Route::controller(SliderController::class)->name('sliders.')->group(function () {
-            Route::get('sliders', 'create')->name('create');
-            Route::post('sliders/upload-image', 'uploadImage')->name('uploadImage');
-            Route::delete('sliders/{id}', 'destroy')->name('destroy');
+    route::middleware('auth')->group(function () {
+        route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
-            Route::get('sliders/v2', 'create_v2')->name('create_v2');
-        });
+        Route::get('/', function () {
+            return view('backend.dashboard');
+        })->name('dashboard');
 
-        Route::controller(BannerController::class)->name('banners.')->group(function () {
-            Route::get('banners', 'showPageBanner')->name('edit');
-            Route::post('banners', 'store')->name('store');
-        });
+        Route::prefix('configurations')->name('configurations.')->group(function () {
 
-        Route::controller(ConfigWebsiteController::class)->name('website.')->group(function () {
-            Route::get('website', 'edit')->name('edit');
-            Route::put('website', 'update')->name('update');
-            route::get('contacts', 'contact')->name('contact');
-            route::get('mails', 'mails')->name('mails');
-            route::post('mails', 'send');
+            Route::controller(SliderController::class)->name('sliders.')->group(function () {
+                Route::get('sliders', 'create')->name('create');
+                Route::post('sliders/upload-image', 'uploadImage')->name('uploadImage');
+                Route::delete('sliders/{id}', 'destroy')->name('destroy');
+
+                Route::get('sliders/v2', 'create_v2')->name('create_v2');
+            });
+
+            Route::controller(BannerController::class)->name('banners.')->group(function () {
+                Route::get('banners', 'showPageBanner')->name('edit');
+                Route::post('banners', 'store')->name('store');
+            });
+
+            Route::controller(ConfigWebsiteController::class)->name('website.')->group(function () {
+                Route::get('website', 'edit')->name('edit');
+                Route::put('website', 'update')->name('update');
+                route::get('contacts', 'contact')->name('contact');
+                route::get('mails', 'mails')->name('mails');
+                route::post('mails', 'send');
+            });
         });
     });
 });

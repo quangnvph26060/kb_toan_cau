@@ -12,5 +12,11 @@ class Slider extends Model
     protected $table = 'sgo_config_sliders';
     protected $fillable = [
         'image',
+        'type'
     ];
+
+    public function scopeGetType($query, $type)
+    {
+        return $query->where('type', $type);
+    }
 }

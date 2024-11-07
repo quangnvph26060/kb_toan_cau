@@ -6,12 +6,12 @@
         </div>
     </div>
     <div id="FORM6" class="ladi-element">
-        <form autocomplete="off" method="post" class="ladi-form">
+        <form method="post" class="ladi-form">
             <div id="FORM_ITEM15" class="ladi-element">
                 <div class="ladi-form-item-container">
                     <div class="ladi-form-item-background"></div>
                     <div class="ladi-form-item">
-                        <input autocomplete="off" tabindex="1" name="name" required
+                        <input  tabindex="1" name="name" required
                             class="ladi-form-control" type="text" placeholder="Họ và tên"
                             value="" />
                     </div>
@@ -21,7 +21,7 @@
                 <div class="ladi-form-item-container">
                     <div class="ladi-form-item-background"></div>
                     <div class="ladi-form-item">
-                        <input autocomplete="off" tabindex="1" name="phone" required
+                        <input  tabindex="1" name="phone" required
                             class="ladi-form-control" type="tel" placeholder="Nhập Số điện thoại"
                             pattern="[0-9]{9,12}" value="" />
                     </div>
@@ -39,7 +39,7 @@
                 <div class="ladi-form-item-container">
                     <div class="ladi-form-item-background"></div>
                     <div class="ladi-form-item">
-                        <textarea autocomplete="off" tabindex="1" name="message" class="ladi-form-control"
+                        <textarea  tabindex="1" name="message" class="ladi-form-control"
                             placeholder="Ghi chú tình trạng bệnh"></textarea>
                     </div>
                 </div>

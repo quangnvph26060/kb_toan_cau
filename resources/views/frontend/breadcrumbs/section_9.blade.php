@@ -62,7 +62,7 @@
     </div>
     <div id="IMAGE14" class="ladi-element">
         <div class="ladi-image ladi-transition">
-            <div class="ladi-image-background"></div>
+            <div class="ladi-image-background" style="background-image: url({{ showImage($config->logo) }}"></div>
         </div>
     </div>
 </div>

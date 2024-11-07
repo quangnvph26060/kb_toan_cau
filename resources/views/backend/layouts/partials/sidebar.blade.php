@@ -51,15 +51,33 @@
                     <div class="collapse menu-dropdown" id="sidebarApps">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
+                                <a href="{{ route('admin.configurations.website.edit') }}" class="nav-link"
+                                    data-key="t-website"> Cấu Hình Website</a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="{{ route('admin.configurations.sliders.create') }}" class="nav-link"
-                                    data-key="t-slider"> Cấu Hình Sliders</a>
+                                    data-key="t-slider"> Cấu Hình Sliders Header</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('admin.configurations.sliders.create_v2') }}" class="nav-link"
+                                    data-key="t-slider"> Cấu Hình Sliders Body</a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('admin.configurations.banners.edit') }}" class="nav-link"
                                     data-key="t-slider"> Cấu Hình Banners</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="{{ route('admin.configurations.website.mails') }}" class="nav-link"
+                                    data-key="t-slider"> Cấu Hình Mail nhận</a>
+                            </li>
                         </ul>
                     </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{route('admin.configurations.website.contact')}}">
+                        <i class="ri-settings-line"></i><span data-key="t-dashboards">Thông tin liên hệ</span>
+                    </a>
                 </li>
                 <!-- end Configuration -->
             </ul>

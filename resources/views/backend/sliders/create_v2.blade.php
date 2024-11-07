@@ -189,7 +189,7 @@
                 },
                 init: function() {
                     this.on("sending", function(file, xhr, formData) {
-                        formData.append("type", "header");
+                        formData.append("type", "body");
                     });
                 },
                 success: function(file, response) {

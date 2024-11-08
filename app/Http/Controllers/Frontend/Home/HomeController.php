@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend\Home;
 
+use App\Models\Video;
 use App\Models\Banner;
 use App\Models\Config;
 use App\Models\Slider;
@@ -21,7 +22,9 @@ class HomeController extends Controller
         $sliderBody = Slider::getType('body')->latest()->get();
 
         $banner = Banner::first();
-        return view('frontend.layouts.master', compact('sliderHeader', 'sliderBody', 'banner'));
+
+        $videos = Video::latest()->get();
+        return view('frontend.layouts.master', compact('sliderHeader', 'sliderBody', 'videos', 'banner'));
     }
 
     public function contact(Request $request)

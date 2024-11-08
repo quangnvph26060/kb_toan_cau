@@ -10,6 +10,8 @@
 
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/main.css') }}" />
 
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 <!-- Sweet Alerts css -->
 <link href="{{ asset('backend/assets/libs/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
 
@@ -81,6 +83,44 @@
             margin-top: 66px !important;
         }
     }
+
+      /* Styles for the video container */
+      .video-container {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 235px;
+            border: none;
+            margin-top: 69px;
+        }
+
+        /* Styles for the Swiper slider */
+        .swiper-container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .video-item {
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .video-item img {
+            width: 100px;
+            height: 75px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-item span {
+            display: block;
+            font-size: 12px;
+            margin-top: 5px;
+            color: #333;
+        }
 </style>
 
 @stack('styles')

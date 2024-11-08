@@ -37,7 +37,7 @@
             toast: true,
             position: 'top-end',
             showConfirmButton: false,
-            timer: 10000000,
+            timer: 3000,
             timerProgressBar: true
         });
     }
@@ -49,10 +49,28 @@
             toast: true,
             position: 'top-end',
             showConfirmButton: false,
-            timer: 10000000,
+            timer: 3000,
             timerProgressBar: true
         });
     }
+
+
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    // Initialize Swiper
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        loop: true,
+        grabCursor: true,
+    });
+
+    $(document).on('click', '.video-item', function() {
+        const videoUrl = $(this).attr('data-video');
+        $('.video-container iframe').attr('src', videoUrl);
+    })
 </script>
 
 <script src="{{ asset('frontend/assets/js/ladipagev3.min.js') }}"></script>

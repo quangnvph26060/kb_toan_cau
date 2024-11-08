@@ -13,7 +13,7 @@
             <form action="" method="post" enctype="multipart/form-data">
                 @csrf
 
-                <div class="row ">
+                <div class="row">
                     <div class="col-lg-6">
                         <div class="mb-3">
                             <img class="img-fluid img-thumbnail w-75" id="show_image_i20"
@@ -31,6 +31,16 @@
                                 onclick="document.getElementById('image_i34').click();">
                             <input type="file" name="image_i34" id="image_i34" class="form-control d-none"
                                 accept="image/*" onchange="previewImage(event, 'show_image_i34')">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">Giấy phép kinh doanh</label>
+                            <img class="img-fluid img-thumbnail w-75" id="show_business"
+                                style="max-height: 100%; cursor: pointer"
+                                src="{{showImage($banner->business)}}" alt=""
+                                onclick="document.getElementById('business').click();">
+                            <input type="file" name="business" id="business" class="form-control d-none"
+                                accept="image/*" onchange="previewImage(event, 'show_business')">
                         </div>
                     </div>
 

@@ -15,6 +15,7 @@ class Banner extends Model
         'image_i20',
         'image_i23',
         'image_i21',
-        'image_i34'
+        'image_i34',
+        'business'
     ];
 }

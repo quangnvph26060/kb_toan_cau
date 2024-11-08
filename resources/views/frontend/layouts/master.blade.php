@@ -27,17 +27,11 @@
         <div id="SECTION46" class="ladi-section">
             <div class="ladi-section-background"></div>
             <div class="ladi-container">
-                <div id="GALLERY18" class="ladi-element" data-max-item="2" data-runtime-id="nXwmCowLyj" data-current="1"
-                    data-is-next="true" data-scrolled="true" data-loaded="true" data-next-time="1731031648414">
+                <div id="GALLERY16" class="ladi-element">
                     <div class="ladi-gallery ladi-gallery-bottom">
                         <div class="ladi-gallery-view">
-                            <div class="ladi-gallery-view-item" data-index="0" ></div>
-                            <div class="ladi-gallery-view-item selected" data-index="1" style="height: 100% !important"></div>
-                        </div>
-                        <div class="ladi-gallery-control">
-                            <div class="ladi-gallery-control-box" style="left: 0px;">
-                                <div class="ladi-gallery-control-item" data-index="0"></div>
-                                <div class="ladi-gallery-control-item selected" data-index="1"></div>
+                            <div class="ladi-gallery-view-item selected" data-index="0"
+                                style="background-image: url({{ showImage($banner->business) }}); height: 100% !important">
                             </div>
                         </div>
                     </div>
@@ -54,6 +48,8 @@
         </div>
 
 
+
+
         <div id="SECTION19" class="ladi-section">
 
             @include('frontend/breadcrumbs/section_19')
@@ -67,6 +63,12 @@
 
         </div>
 
+
+        <div id="SECTION32" class="ladi-section">
+
+            @include('frontend/breadcrumbs/section_32')
+
+        </div>
 
         <div id="SECTION38" class="ladi-section">
 

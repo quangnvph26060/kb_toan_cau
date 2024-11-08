@@ -21,7 +21,7 @@
                 success: function(data) {
 
                     if (data.status) {
-                        window.location.reload();
+                        toastSuccess(data.message);
                     } else {
                         toastError(data.message);
                     }
@@ -33,12 +33,23 @@
     function toastError(message) {
         Swal.fire({
             icon: 'error',
-            title: 'Oops...',
             text: message,
             toast: true,
             position: 'top-end',
             showConfirmButton: false,
-            timer: 3000,
+            timer: 10000000,
+            timerProgressBar: true
+        });
+    }
+
+    function toastSuccess(message) {
+        Swal.fire({
+            icon: 'success',
+            text: message,
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 10000000,
             timerProgressBar: true
         });
     }

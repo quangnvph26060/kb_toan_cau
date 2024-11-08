@@ -37,6 +37,7 @@
         text-align: center;
         font-weight: bold;
         margin-bottom: 20px;
+        line-height: 22px;
     }
 
     .branch {
@@ -60,7 +61,7 @@
         margin-bottom: 20px;
     }
 
-    .contact-info p{
+    .contact-info p {
         margin-bottom: 20px;
     }
 
@@ -72,6 +73,13 @@
         font-size: 12px;
         color: #a0a0a0;
         text-align: center;
+        line-height: 18px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .swal2-popup.swal2-show {
+            margin-top: 66px !important;
+        }
     }
 </style>
 

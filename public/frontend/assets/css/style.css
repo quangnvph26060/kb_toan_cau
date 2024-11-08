@@ -585,6 +585,7 @@ body.grab {
     perspective: 1000px;
 }
 
+
 .ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.play-video {
     cursor: pointer;
 }
@@ -2109,7 +2110,8 @@ a:link {
     transition: transform 300ms ease-in-out;
 }
 
-.ladi-gallery-view iframe, .ladi-element iframe{
+.ladi-gallery-view iframe,
+.ladi-element iframe {
     max-width: 100%;
     height: 240px;
 }

@@ -46,6 +46,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
                 Route::delete('sliders/{id}', 'destroy')->name('destroy');
 
                 Route::get('sliders/v2', 'create_v2')->name('create_v2');
+                Route::get('sliders/v3', 'create_v3')->name('create_v3');
             });
 
             route::controller(VideoController::class)->name('videos.')->group(function () {

@@ -39,6 +39,14 @@ class SliderController extends Controller
         return view('backend.sliders.create_v2', compact('title', 'sliders'));
     }
 
+    public function create_v3()
+    {
+        $title = 'Cấu Hình Ảnh Chuyên Gia';
+        $sliders = Slider::getType( 'expert')->latest()->get();
+
+        return view('backend.sliders.create_v3', compact('title', 'sliders'));
+    }
+
     /**
      * Store a newly created resource in storage.
      */
@@ -90,7 +98,6 @@ class SliderController extends Controller
 
     public function uploadImage(Request $request)
     {
-
         $validator = Validator::make($request->all(), [
             'file' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);

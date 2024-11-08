@@ -24,6 +24,31 @@
 
         </div>
 
+        <div id="SECTION46" class="ladi-section">
+            <div class="ladi-section-background"></div>
+            <div class="ladi-container">
+                <div id="GALLERY16" class="ladi-element">
+                    <div class="ladi-gallery ladi-gallery-bottom">
+                        <div class="ladi-gallery-view">
+                            <div class="ladi-gallery-view-item selected" data-index="0"
+                                style="background-image: url({{ showImage($banner->business) }}); height: 100% !important">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="BUTTON50" class="ladi-element">
+                    <div class="ladi-button">
+                        <div class="ladi-button-background"></div>
+                        <div id="BUTTON_TEXT50" class="ladi-element ladi-button-headline">
+                            <p class="ladi-headline">ĐƯỢC SỞ Y TẾ CẤP PHÉP HOẠT ĐỘNG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
         <div id="SECTION19" class="ladi-section">
 
@@ -38,6 +63,12 @@
 
         </div>
 
+
+        <div id="SECTION32" class="ladi-section">
+
+            @include('frontend/breadcrumbs/section_32')
+
+        </div>
 
         <div id="SECTION38" class="ladi-section">
 
@@ -55,8 +86,7 @@
 
         <div id="SECTION5" class="ladi-section">
             <div class="ladi-container">
-                <a href="{{ $config->link_fb }}"
-                    target="_blank" id="SHAPE2" class="ladi-element ladi-animation"
+                <a href="{{ $config->link_fb }}" target="_blank" id="SHAPE2" class="ladi-element ladi-animation"
                     data-replace-href="{{ $config->link_fb }}">
                     <div class="ladi-shape"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                             preserveAspectRatio="none" viewBox="0 0 32 32" class="" fill="#000">
@@ -69,8 +99,8 @@
                             <image href="https://w.ladicdn.com/ladiui/icons/social/phone-call.svg" height="32"
                                 width="32"></image>
                         </svg></div>
-                </a><a href="https://zalo.me/{{$config->hotline}}" target="_blank" id="BUTTON11" class="ladi-element"
-                    data-replace-href="https://zalo.me/{{$config->hotline}}">
+                </a><a href="https://zalo.me/{{ $config->hotline }}" target="_blank" id="BUTTON11" class="ladi-element"
+                    data-replace-href="https://zalo.me/{{ $config->hotline }}">
                     <div class="ladi-button">
                         <div class="ladi-button-background"></div>
                         <div id="BUTTON_TEXT11" class="ladi-element ladi-button-headline">

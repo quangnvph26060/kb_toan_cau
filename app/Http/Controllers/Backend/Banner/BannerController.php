@@ -26,6 +26,7 @@ class BannerController extends Controller
             'image_i52' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'image_i23' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'image_i21' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'business' =>   'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         if ($request->hasFile('image_i34')) {
@@ -51,6 +52,11 @@ class BannerController extends Controller
         if ($request->hasFile('image_i52')) {
             deleteImage($banner->image_i52);
             $validated['image_i52'] = saveImages($request, 'image_i52', 'banners', 1080, 134);
+        }
+
+        if ($request->hasFile('business')) {
+            deleteImage($banner->business);
+            $validated['business'] = saveImages($request, 'business', 'banners', 858, 650);
         }
 
         $banner->update($validated);

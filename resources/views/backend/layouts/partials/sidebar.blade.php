@@ -63,8 +63,12 @@
                                     data-key="t-slider"> Cấu Hình Sliders Body</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('admin.configurations.banners.edit') }}" class="nav-link"
-                                    data-key="t-slider"> Cấu Hình Banners</a>
+                                <a href="{{ route('admin.configurations.sliders.create_v2') }}" class="nav-link"
+                                    data-key="t-slider"> Cấu Hình Sliders Body</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('admin.configurations.videos.create') }}" class="nav-link"
+                                    data-key="t-video"> Cấu Hình Slider Videos</a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('admin.configurations.website.mails') }}" class="nav-link"

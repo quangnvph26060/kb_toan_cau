@@ -6,6 +6,7 @@ use App\Http\Controllers\Frontend\Home\HomeController;
 use App\Http\Controllers\Backend\Banner\BannerController;
 use App\Http\Controllers\Backend\ConfigWebsiteController;
 use App\Http\Controllers\Backend\Slider\SliderController;
+use App\Http\Controllers\Backend\Video\VideoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +46,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
                 Route::delete('sliders/{id}', 'destroy')->name('destroy');
 
                 Route::get('sliders/v2', 'create_v2')->name('create_v2');
+            });
+
+            route::controller(VideoController::class)->name('videos.')->group(function () {
+                route::get('videos', 'create')->name('create');
+                route::post('videos', 'store');
             });
 
             Route::controller(BannerController::class)->name('banners.')->group(function () {

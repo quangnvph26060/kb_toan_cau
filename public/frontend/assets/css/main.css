@@ -281,8 +281,6 @@
     margin-right: 1px;
 }
 
-
-
 #IMAGE60 {
     width: 422.238px;
     height: 395.679px;
@@ -298,27 +296,27 @@
     background-image: url("https://w.ladicdn.com/s750x750/5e69a8046e15317a387252bb/459030603_510614471720970_5058502378438474689_n-20240912095736-7werk.jpg");
 }
 
-#GALLERY18 {
+#GALLERY16 {
     width: 420.284px;
     height: 324.44px;
     top: 53.0004px;
     left: 0px;
 }
 
-#GALLERY18 > .ladi-gallery > .ladi-gallery-view {
+#GALLERY16 > .ladi-gallery > .ladi-gallery-view {
     height: calc(100% + 0px);
 }
 
-#GALLERY18 > .ladi-gallery > .ladi-gallery-control,
+#GALLERY16 > .ladi-gallery > .ladi-gallery-control,
 #SECTION_POPUP {
     height: 0px;
 }
 
-#GALLERY18 > .ladi-gallery > .ladi-gallery-control {
+#GALLERY16 > .ladi-gallery > .ladi-gallery-control {
     display: none;
 }
 
-#GALLERY18
+#GALLERY16
     > .ladi-gallery
     > .ladi-gallery-control
     > .ladi-gallery-control-box
@@ -328,19 +326,19 @@
     margin-right: 0px;
 }
 
-#GALLERY18 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
+#GALLERY16 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
     background-image: url("https://w.ladicdn.com/s750x650/5e69a8046e15317a387252bb/giay-phep-phong-kham-maia-2-20231130083339-lwq0i.jpg");
 }
 
-#GALLERY18 .ladi-gallery .ladi-gallery-control-item[data-index="0"] {
+#GALLERY16 .ladi-gallery .ladi-gallery-control-item[data-index="0"] {
     background-image: url("https://w.ladicdn.com/s700x700/5e69a8046e15317a387252bb/giay-phep-phong-kham-maia-2-20231130083339-lwq0i.jpg");
 }
 
-#GALLERY18 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
+#GALLERY16 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
     background-image: url("https://w.ladicdn.com/s750x650/5e69a8046e15317a387252bb/giay-phep-phong-kham-maia-1-20231130083338-dazna.jpg");
 }
 
-#GALLERY18 .ladi-gallery .ladi-gallery-control-item[data-index="1"] {
+#GALLERY16 .ladi-gallery .ladi-gallery-control-item[data-index="1"] {
     background-image: url("https://w.ladicdn.com/s700x700/5e69a8046e15317a387252bb/giay-phep-phong-kham-maia-1-20231130083338-dazna.jpg");
 }
 
@@ -625,7 +623,11 @@
 }
 
 #SECTION47 {
-    height: 291.815px;
+    height: 466.815px;
+}
+
+#SECTION32 {
+    height: 239.226px;
 }
 
 #GALLERY19 {
@@ -635,7 +637,9 @@
     left: 0.1115px;
 }
 
-
+#SECTION46 {
+    height: 377.44px;
+}
 
 #IMAGE52,
 #IMAGE52 > .ladi-image > .ladi-image-background {
@@ -931,12 +935,6 @@
     height: 707.226px;
 }
 
-#IMAGE35 > .ladi-image > .ladi-image-background {
-    width: 420px;
-    height: 776.158px;
-    background-image: url("https://w.ladicdn.com/s750x1100/5e69a8046e15317a387252bb/z5774909982116_90317fcb50e47237b0e9fce76a297431-20240828064908-2c3um.jpg");
-}
-
 #BUTTON32,
 #BUTTON45 {
     width: 219.811px;
@@ -1090,7 +1088,11 @@
 }
 
 #SECTION31 {
-    height: 309px;
+    height: 374px;
+}
+
+.ytp-cued-thumbnail-overlay-image {
+    margin-top: 34px;
 }
 
 #BUTTON31 {

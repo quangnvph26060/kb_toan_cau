@@ -59,8 +59,8 @@
                                     data-key="t-slider"> Cấu Hình Sliders Header</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('admin.configurations.sliders.create_v2') }}" class="nav-link"
-                                    data-key="t-slider"> Cấu Hình Sliders Body</a>
+                                <a href="{{ route('admin.configurations.banners.edit') }}" class="nav-link"
+                                    data-key="t-slider"> Cấu Hình Banners</a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('admin.configurations.sliders.create_v2') }}" class="nav-link"

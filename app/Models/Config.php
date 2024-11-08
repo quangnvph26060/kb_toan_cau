@@ -23,6 +23,7 @@ class Config extends Model
         'link_fb',
         'link_video_v1',
         'link_video_v2',
+        'custom_header'
     ];
 
     public function branches()

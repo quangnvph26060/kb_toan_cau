@@ -125,6 +125,23 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Cấu hình scripts</h4>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-12 mb-3">
+                                <div class="form-group">
+                                    <label for="custom_header" class="form-label">Scripts Head</label>
+                                    <textarea class="form-control" id="custom_header" name="custom_header" placeholder="Scripts Head" rows="5">{{ old('custom_header', $config->custom_header) }}</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 {{-- <div class="card">
                     <div class="card-header">
                         <h4 class="card-title">Thêm Cơ Sở</h4>

@@ -17,3 +17,5 @@
 
 
 @include('frontend/layouts/partials/style')
+
+{!! $config->custom_header !!}

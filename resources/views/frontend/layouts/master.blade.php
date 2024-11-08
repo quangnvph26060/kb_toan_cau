@@ -28,7 +28,7 @@
             <div class="ladi-section-background"></div>
             <div class="ladi-container">
                 <div id="GALLERY16" class="ladi-element">
-                    <div class="ladi-gallery ladi-gallery-bottom" >
+                    <div class="ladi-gallery ladi-gallery-bottom">
                         <div class="ladi-gallery-view">
                             <div class="ladi-gallery-view-item selected" data-index="0"
                                 style="background-image: url({{ showImage($banner->business) }}); height: 100% !important">
@@ -52,10 +52,12 @@
             <div class="ladi-container">
                 <div id="GALLERY22" class="ladi-element" data-max-item="9" data-runtime-id="gWZiGqbNkV" data-current="7"
                     data-is-next="true" data-scrolled="true" data-loaded="true" data-next-time="1731048591030">
-                    <div class="ladi-gallery ladi-gallery-bottom" >
-                        <div class="ladi-gallery-view">
-                            <div class="ladi-gallery-view-arrow ladi-gallery-view-arrow-left" style="display: none"></div>
-                            <div class="ladi-gallery-view-arrow ladi-gallery-view-arrow-right" style="display: none"></div>
+                    <div class="ladi-gallery ladi-gallery-bottom">
+                        <div class="ladi-gallery-view" style="margin-top: 53px !important;">
+                            <div class="ladi-gallery-view-arrow ladi-gallery-view-arrow-left" style="display: none">
+                            </div>
+                            <div class="ladi-gallery-view-arrow ladi-gallery-view-arrow-right" style="display: none">
+                            </div>
 
                             @foreach ($sliderExpert as $sx)
                                 <div class="ladi-gallery-view-item {{ $loop->first ? 'selected' : '' }}"
@@ -67,12 +69,24 @@
                             <div class="ladi-gallery-control-box" style="left: -70px;">
 
                                 @foreach ($sliderExpert as $item)
-                                    <div class="ladi-gallery-control-item {{ $loop->first ? 'selected' : '' }}" data-index="{{ $loop->index }}" style="background-image: url({{ showImage($item->image) }}); width: 90px !important;"></div>
+                                    <div class="ladi-gallery-control-item {{ $loop->first ? 'selected' : '' }}"
+                                        data-index="{{ $loop->index }}"
+                                        style="background-image: url({{ showImage($item->image) }}); width: 90px !important;">
+                                    </div>
                                 @endforeach
 
                             </div>
                             <div class="ladi-gallery-control-arrow ladi-gallery-control-arrow-left"></div>
                             <div class="ladi-gallery-control-arrow ladi-gallery-control-arrow-right opacity-0"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="BUTTON50" class="ladi-element">
+                    <div class="ladi-button">
+                        <div class="ladi-button-background"></div>
+                        <div id="BUTTON_TEXT50" class="ladi-element ladi-button-headline">
+                            <p class="ladi-headline">ĐỘI NGŨ CHUYÊN GIA</p>
                         </div>
                     </div>
                 </div>
@@ -129,8 +143,8 @@
                             <image href="https://w.ladicdn.com/ladiui/icons/social/phone-call.svg" height="32"
                                 width="32"></image>
                         </svg></div>
-                </a><a href="https://zalo.me/{{ $config->hotline }}" target="_blank" id="BUTTON11" class="ladi-element"
-                    data-replace-href="https://zalo.me/{{ $config->hotline }}">
+                </a><a href="https://zalo.me/{{ $config->hotline }}" target="_blank" id="BUTTON11"
+                    class="ladi-element" data-replace-href="https://zalo.me/{{ $config->hotline }}">
                     <div class="ladi-button">
                         <div class="ladi-button-background"></div>
                         <div id="BUTTON_TEXT11" class="ladi-element ladi-button-headline">

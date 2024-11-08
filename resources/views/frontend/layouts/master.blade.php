@@ -24,28 +24,7 @@
 
         </div>
 
-        <div id="SECTION46" class="ladi-section">
-            <div class="ladi-section-background"></div>
-            <div class="ladi-container">
-                <div id="GALLERY16" class="ladi-element">
-                    <div class="ladi-gallery ladi-gallery-bottom">
-                        <div class="ladi-gallery-view">
-                            <div class="ladi-gallery-view-item selected" data-index="0"
-                                style="background-image: url({{ showImage($banner->business) }}); height: 100% !important">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="BUTTON50" class="ladi-element">
-                    <div class="ladi-button">
-                        <div class="ladi-button-background"></div>
-                        <div id="BUTTON_TEXT50" class="ladi-element ladi-button-headline">
-                            <p class="ladi-headline">ĐƯỢC SỞ Y TẾ CẤP PHÉP HOẠT ĐỘNG</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
         <div id="SECTION49" class="ladi-section">
             <div class="ladi-section-background"></div>
@@ -93,17 +72,42 @@
             </div>
         </div>
 
-
-        <div id="SECTION19" class="ladi-section">
-
-            @include('frontend/breadcrumbs/section_19')
-
+        <div id="SECTION46" class="ladi-section">
+            <div class="ladi-section-background"></div>
+            <div class="ladi-container">
+                <div id="GALLERY16" class="ladi-element">
+                    <div class="ladi-gallery ladi-gallery-bottom">
+                        <div class="ladi-gallery-view">
+                            <div class="ladi-gallery-view-item selected" data-index="0"
+                                style="background-image: url({{ showImage($banner->business) }}); height: 100% !important">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="BUTTON50" class="ladi-element">
+                    <div class="ladi-button">
+                        <div class="ladi-button-background"></div>
+                        <div id="BUTTON_TEXT50" class="ladi-element ladi-button-headline">
+                            <p class="ladi-headline">ĐƯỢC SỞ Y TẾ CẤP PHÉP HOẠT ĐỘNG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
 
         <div id="SECTION47" class="ladi-section">
 
             @include('frontend/breadcrumbs/section_47')
+
+        </div>
+
+
+
+
+
+        <div id="SECTION19" class="ladi-section">
+
+            @include('frontend/breadcrumbs/section_19')
 
         </div>
 

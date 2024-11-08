@@ -802,6 +802,7 @@ body.grab {
 .ladi-gallery .ladi-gallery-control {
     position: absolute;
     overflow: hidden;
+    top: 255px;
 }
 
 .ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow {

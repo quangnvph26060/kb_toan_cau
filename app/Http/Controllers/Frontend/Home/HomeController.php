@@ -21,10 +21,12 @@ class HomeController extends Controller
 
         $sliderBody = Slider::getType('body')->latest()->get();
 
+        $sliderExpert = Slider::getType('expert')->latest()->get();
+
         $banner = Banner::first();
 
         $videos = Video::latest()->get();
-        return view('frontend.layouts.master', compact('sliderHeader', 'sliderBody', 'videos', 'banner'));
+        return view('frontend.layouts.master', compact('sliderHeader', 'sliderExpert', 'sliderBody', 'videos', 'banner'));
     }
 
     public function contact(Request $request)

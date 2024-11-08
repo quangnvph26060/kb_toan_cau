@@ -28,7 +28,7 @@
             <div class="ladi-section-background"></div>
             <div class="ladi-container">
                 <div id="GALLERY16" class="ladi-element">
-                    <div class="ladi-gallery ladi-gallery-bottom">
+                    <div class="ladi-gallery ladi-gallery-bottom" >
                         <div class="ladi-gallery-view">
                             <div class="ladi-gallery-view-item selected" data-index="0"
                                 style="background-image: url({{ showImage($banner->business) }}); height: 100% !important">
@@ -47,7 +47,37 @@
             </div>
         </div>
 
+        <div id="SECTION49" class="ladi-section">
+            <div class="ladi-section-background"></div>
+            <div class="ladi-container">
+                <div id="GALLERY22" class="ladi-element" data-max-item="9" data-runtime-id="gWZiGqbNkV" data-current="7"
+                    data-is-next="true" data-scrolled="true" data-loaded="true" data-next-time="1731048591030">
+                    <div class="ladi-gallery ladi-gallery-bottom" >
+                        <div class="ladi-gallery-view">
+                            <div class="ladi-gallery-view-arrow ladi-gallery-view-arrow-left" style="display: none"></div>
+                            <div class="ladi-gallery-view-arrow ladi-gallery-view-arrow-right" style="display: none"></div>
 
+                            @foreach ($sliderExpert as $sx)
+                                <div class="ladi-gallery-view-item {{ $loop->first ? 'selected' : '' }}"
+                                    data-index="{{ $loop->index }}"
+                                    style="background-image: url({{ showImage($sx->image) }})"></div>
+                            @endforeach
+                        </div>
+                        <div class="ladi-gallery-control">
+                            <div class="ladi-gallery-control-box" style="left: -70px;">
+
+                                @foreach ($sliderExpert as $item)
+                                    <div class="ladi-gallery-control-item {{ $loop->first ? 'selected' : '' }}" data-index="{{ $loop->index }}" style="background-image: url({{ showImage($item->image) }}); width: 90px !important;"></div>
+                                @endforeach
+
+                            </div>
+                            <div class="ladi-gallery-control-arrow ladi-gallery-control-arrow-left"></div>
+                            <div class="ladi-gallery-control-arrow ladi-gallery-control-arrow-right opacity-0"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <div id="SECTION19" class="ladi-section">

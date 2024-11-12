@@ -84,43 +84,60 @@
         }
     }
 
-      /* Styles for the video container */
-      .video-container {
-            max-width: 100%;
-            text-align: center;
-        }
+    /* Styles for the video container */
+    .video-container {
+        max-width: 100%;
+        text-align: center;
+    }
 
-        .video-container iframe {
-            width: 100%;
-            height: 235px;
-            border: none;
-            margin-top: 69px;
-        }
+    .video-container iframe {
+        width: 100%;
+        height: 235px;
+        border: none;
+        margin-top: 69px;
+    }
 
-        /* Styles for the Swiper slider */
-        .swiper-container {
-            width: 100%;
-            max-width: 600px;
-        }
+    /* Styles for the Swiper slider */
+    .swiper-container {
+        width: 100%;
+        max-width: 600px;
+    }
 
-        .video-item {
-            text-align: center;
-            cursor: pointer;
-        }
+    .video-item {
+        text-align: center;
+        cursor: pointer;
+    }
 
-        .video-item img {
-            width: 100px;
-            height: 75px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
+    .video-item img {
+        width: 100px;
+        height: 75px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
-        .video-item span {
-            display: block;
-            font-size: 12px;
-            margin-top: 5px;
-            color: #333;
-        }
+    .video-item span {
+        display: block;
+        font-size: 12px;
+        margin-top: 5px;
+        color: #333;
+    }
+</style>
+
+<style>
+    #IMAGE60 {
+        width: 422.238px;
+        height: 395.679px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #IMAGE60>.ladi-image>.ladi-image-background {
+        width: 422.855px;
+        height: 233.855px;
+        top: 0;
+        left: -2.98407px;
+        background-image: url("https://w.ladicdn.com/s750x750/5e69a8046e15317a387252bb/459030603_510614471720970_5058502378438474689_n-20240912095736-7werk.jpg");
+    }
 </style>
 
 @stack('styles')

@@ -17,16 +17,18 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $sliderHeader = Slider::getType('header')->latest()->get();
+        $sliderV1 = Slider::getType('v1')->latest()->get();
 
-        $sliderBody = Slider::getType('body')->latest()->get();
+        $sliderV2 = Slider::getType('v2')->latest()->get();
 
-        $sliderExpert = Slider::getType('expert')->latest()->get();
+        $sliderV3 = Slider::getType('v3')->latest()->get();
+
+        $sliderV4 = Slider::getType('v4')->latest()->get();
 
         $banner = Banner::first();
 
         $videos = Video::latest()->get();
-        return view('frontend.layouts.master', compact('sliderHeader', 'sliderExpert', 'sliderBody', 'videos', 'banner'));
+        return view('frontend.layouts.master', compact('sliderV1', 'sliderV2', 'sliderV3', 'sliderV4', 'videos', 'banner'));
     }
 
     public function contact(Request $request)

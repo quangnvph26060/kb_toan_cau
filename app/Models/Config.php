@@ -14,6 +14,7 @@ class Config extends Model
         'name',
         'logo',
         'icon',
+        'banner',
         'title_seo',
         'description_seo',
         'keywords_seo',
@@ -23,7 +24,7 @@ class Config extends Model
         'link_fb',
         'link_video_v1',
         'link_video_v2',
-        'link_video_v2_1',
+        'link_video_main',
         'link_video_v3',
         'custom_header'
     ];

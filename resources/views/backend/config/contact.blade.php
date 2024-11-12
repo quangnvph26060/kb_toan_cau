@@ -29,7 +29,7 @@
                                     <td>{{ $item->name }}</td>
                                     <td>{{ $item->phone }}</td>
                                     <td>{{ $item->message ?? 'NAN' }}</td>
-                                    <td>{{ \Carbon\Carbon::parse($item->created_at)->locale('vi')->diffForHumans() }}</td>
+                                    <td>{{ \Carbon\Carbon::parse($item->created_at)->format('d-m-Y H:i') }} ({{\Carbon\Carbon::parse($item->created_at)->locale('vi')->diffForHumans()}})</td>
                                 </tr>
                             @endforeach
 

@@ -47,6 +47,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
                 Route::get('sliders/v2', 'create_v2')->name('create_v2');
                 Route::get('sliders/v3', 'create_v3')->name('create_v3');
+                Route::get('sliders/v4', 'create_v4')->name('create_v4');
             });
 
             route::controller(VideoController::class)->name('videos.')->group(function () {

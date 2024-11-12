@@ -370,6 +370,18 @@
     width: 420px;
 }
 
+#BUTTON_TEXT31 {
+padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#BUTTON_TEXT31 p {
+    margin: 0;
+}
+
 #BUTTON_TEXT50 > .ladi-headline,
 #BUTTON_TEXT15 > .ladi-headline {
     font-size: 18px;

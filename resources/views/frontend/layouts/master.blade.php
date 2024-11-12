@@ -96,6 +96,14 @@
                     </div>
                 </div>
             </div>
+            <div id="BUTTON50" class="ladi-element">
+                <div class="ladi-button">
+                    <div class="ladi-button-background"></div>
+                    <div id="BUTTON_TEXT50" class="ladi-element ladi-button-headline">
+                        <p class="ladi-headline">ĐƯỢC SỞ Y TẾ CẤP PHÉP HOẠT ĐỘNG</p>
+                    </div>
+                </div>
+            </div>
         </div>
         {{-- style="height: 237px !important" --}}
         <div id="SECTION47" class="ladi-section">

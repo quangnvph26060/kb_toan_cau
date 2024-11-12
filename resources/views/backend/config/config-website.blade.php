@@ -72,6 +72,15 @@
 
                             <div class="col-lg-12 mt-3">
                                 <div class="form-group">
+                                    <label for="link_video_main" class="form-label">Link Video Main</label>
+                                    <input type="text" class="form-control" id="link_video_main" name="link_video_main"
+                                        placeholder="Link Video Main"
+                                        value="{{ old('link_video_main', $config->link_video_main) }}" />
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 mt-3">
+                                <div class="form-group">
                                     <label for="link_video_v1" class="form-label">Link Video Header</label>
                                     <input type="text" class="form-control" id="link_video_v1" name="link_video_v1"
                                         placeholder="Link Video Header"
@@ -209,6 +218,19 @@
                         <div class="form-group">
                             <input type="file" class="form-control" id="icon" name="icon" />
                             <img src="{{ showImage($config->icon) }}" alt="" width="100%" class="mt-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Cấu hình banner</h4>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input type="file" class="form-control" id="banner" name="banner" />
+                            <img src="{{ showImage($config->banner) }}" alt="" width="100%" class="mt-3">
                         </div>
                     </div>
                 </div>

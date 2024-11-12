@@ -24,27 +24,34 @@ class SliderController extends Controller
      */
     public function create()
     {
-        $title = 'Cấu Hình Trình Chiếu Đầu Trang';
-        $sliders = Slider::getType('header')->latest()->get();
+        $title = 'Cấu Hình Trình Chiếu Chuyên Gia';
+        $sliders = Slider::getType('v1')->latest()->get();
 
 
-        return view('backend.sliders.create', compact('title', 'sliders'));
+        return view('backend.sliders.create_v1', compact('title', 'sliders'));
     }
 
     public function create_v2()
     {
-        $title = 'Cấu Hình Trình Chiếu Thân Trang';
-        $sliders = Slider::getType( 'body')->latest()->get();
+        $title = 'Cấu Hình Trình Chiếu Thân Trang 1';
+        $sliders = Slider::getType( 'v2')->latest()->get();
 
         return view('backend.sliders.create_v2', compact('title', 'sliders'));
     }
 
     public function create_v3()
     {
-        $title = 'Cấu Hình Ảnh Chuyên Gia';
-        $sliders = Slider::getType( 'expert')->latest()->get();
+        $title = 'Cấu Hình Trình Chiếu Thân Trang 2';
+        $sliders = Slider::getType( 'v3')->latest()->get();
 
         return view('backend.sliders.create_v3', compact('title', 'sliders'));
+    }
+    public function create_v4()
+    {
+        $title = 'Cấu Hình Trình Chiếu Thân Trang 3';
+        $sliders = Slider::getType( 'v4')->latest()->get();
+
+        return view('backend.sliders.create_v4', compact('title', 'sliders'));
     }
 
     /**

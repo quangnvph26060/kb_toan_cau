@@ -178,7 +178,7 @@
                 acceptedFiles: "image/*",
                 previewTemplate: document.querySelector('#preview-template').innerHTML,
                 previewsContainer: "#dropzone-preview",
-                maxFilesize: 5, // in MB
+                maxFilesize: 5,
                 paramName: "file",
                 headers: {
                     "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').getAttribute(
@@ -186,7 +186,7 @@
                 },
                 init: function() {
                     this.on("sending", function(file, xhr, formData) {
-                        formData.append("type", "v3");
+                        formData.append("type", "v4");
                     });
                 },
                 success: function(file, response) {

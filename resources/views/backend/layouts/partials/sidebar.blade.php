@@ -56,15 +56,19 @@
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('admin.configurations.sliders.create') }}" class="nav-link"
-                                    data-key="t-slider"> Cấu Hình Sliders Header</a>
+                                    data-key="t-slider"> Cấu Hình Sliders Chuyên Gia</a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('admin.configurations.sliders.create_v2') }}" class="nav-link"
-                                    data-key="t-slider"> Cấu Hình Sliders Body</a>
+                                    data-key="t-slider"> Cấu Hình Sliders Body V1</a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('admin.configurations.sliders.create_v3') }}" class="nav-link"
-                                    data-key="t-slider"> Cấu Hình Ảnh Chuyên Gia</a>
+                                    data-key="t-slider"> Cấu Hình Sliders Body V2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('admin.configurations.sliders.create_v4') }}" class="nav-link"
+                                    data-key="t-slider"> Cấu Hình Sliders Body V3</a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('admin.configurations.videos.create') }}" class="nav-link"

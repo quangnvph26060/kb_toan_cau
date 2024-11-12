@@ -35,9 +35,10 @@ class ConfigWebsiteController extends Controller
             'link_fb' => 'nullable|string|max:255',
             'link_video_v1' => 'nullable|string',
             'link_video_v2' => 'nullable|string',
-            'link_video_v2_1' => 'nullable|string',
+            'link_video_main' => 'nullable|string',
             'link_video_v3' => 'nullable|string',
-            'custom_header' => 'nullable|string|',
+            'custom_header' => 'nullable|string',
+            'banner' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             // 'branch_names.*' => 'required|string|max:255',
             // 'branch_addresses.*' => 'required|string|max:500',
             // 'deleted_branch_ids.*' => 'nullable|exists:branches,id' // Ensure the deleted branch IDs are valid
@@ -56,6 +57,12 @@ class ConfigWebsiteController extends Controller
             deleteImage($config->icon);
             $iconPath = $request->file('icon')->store('uploads/icon', 'public');
             $validated['icon'] = $iconPath;
+        }
+
+        if ($request->hasFile('banner')) {
+            deleteImage($config->banner);
+            $bannerPath = saveImages($request, 'banner', 'banners', 1140, 640);
+            $validated['banner'] = $bannerPath;
         }
 
         // // Handle the branches update/addition

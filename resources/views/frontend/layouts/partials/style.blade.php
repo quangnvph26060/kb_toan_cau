@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}" />
 
-<link rel="stylesheet" href="{{ asset('frontend/assets/css/main.css') }}" />
+<link rel="stylesheet" href="{{ asset('frontend/assets/css/mainn.css') }}" />
 
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 

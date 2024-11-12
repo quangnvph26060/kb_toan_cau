@@ -5,8 +5,11 @@
         <div class="ladi-button">
             <div class="ladi-button-background"></div>
             <div id="BUTTON_TEXT31" class="ladi-element ladi-button-headline">
-                <p class="ladi-headline">
-                    ĐỊA CHỈ UY TIN&nbsp;<br />ĐƯỢC NHIỀU KHÁCH HÀNG TIN TƯỞNG
+                <p>
+                    <img style="width: 90px" src="{{ asset('frontend/assets/images/VTV.png') }}" alt="">
+                </p>
+                <p class="ladi-headline" style="color: #ffffff !important">
+                    NÓI VỀ CHÚNG TÔI
                 </p>
             </div>
         </div>

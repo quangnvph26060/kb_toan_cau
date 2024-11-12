@@ -94,12 +94,22 @@
                 </div>
             </div>
         </div>
+        {{-- style="height: 237px !important" --}}
+        <div id="SECTION47" class="ladi-section" >
 
-        <div id="SECTION47" class="ladi-section">
-
-            @include('frontend/breadcrumbs/section_47')
+            @include('frontend/breadcrumbs/section_47', ['is_used' => true, 'item' => '$item_1'])
 
         </div>
+        {{-- <div id="SECTION47" class="ladi-section" style="height: 237px !important">
+
+            @include('frontend/breadcrumbs/section_47', ['is_used' => false, 'item' => '$item_2'])
+
+        </div>
+        <div id="SECTION47" class="ladi-section">
+
+            @include('frontend/breadcrumbs/section_47', ['is_used' => false, 'item' => '$item_3'])
+
+        </div> --}}
 
 
 
@@ -114,7 +124,13 @@
 
         <div id="SECTION32" class="ladi-section">
 
-            @include('frontend/breadcrumbs/section_32')
+            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v1])
+
+        </div>
+
+        <div id="SECTION32" class="ladi-section" style="padding-top: 10px !important">
+
+            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v2])
 
         </div>
 
@@ -203,12 +219,19 @@
 
         </div>
 
+        <div id="SECTION32" class="ladi-section">
+
+            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v3])
+
+        </div>
 
         <div id="SECTION6" class="ladi-section">
 
             @include('frontend/breadcrumbs/section_6')
 
         </div>
+
+
 
 
         <div id="SECTION55" class="ladi-section">

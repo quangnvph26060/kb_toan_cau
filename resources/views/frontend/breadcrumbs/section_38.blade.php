@@ -31,7 +31,7 @@
                 <div class="ladi-button">
                     <div class="ladi-button-background"></div>
                     <div id="BUTTON_TEXT24" class="ladi-element ladi-button-headline">
-                        <p class="ladi-headline">HOÀN TẤT ĐĂNG KÝ</p>
+                        <p class="ladi-headline">NHẬN TƯ VẤN</p>
                     </div>
                 </div>
             </div>

@@ -23,6 +23,8 @@ class Config extends Model
         'link_fb',
         'link_video_v1',
         'link_video_v2',
+        'link_video_v2_1',
+        'link_video_v3',
         'custom_header'
     ];
 

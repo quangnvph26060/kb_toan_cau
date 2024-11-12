@@ -62,7 +62,7 @@ class HomeController extends Controller
 
 
         // Gửi email sau khi tạo/cập nhật liên hệ
-        Mail::send(new UserPhoneNumberNotification($validated['phone'], $validated['name']));
+        // Mail::send(new UserPhoneNumberNotification($validated['phone'], $validated['name']));
 
         return response()->json(['status' => true, 'message' => 'Chung tôi sẽ liên hệ với bạn trong thời gian sơms nhất.']);
     }

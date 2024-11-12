@@ -38,7 +38,7 @@
                 @foreach ($sliderV4 as $item)
                     <div class="ladi-gallery-view-item {{ $loop->first ? 'selected' : '' }}"
                         data-index="{{ $loop->index }}"
-                        style="background-image: url({{ showImage($item->image) }}); height: 100%;">
+                        style="background-image: url({{ showImage($item->image) }});">
                     </div>
                 @endforeach
 

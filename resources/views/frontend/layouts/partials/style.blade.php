@@ -8,7 +8,8 @@
 
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}" />
 
-<link rel="stylesheet" href="{{ asset('frontend/assets/css/main.css') }}" />
+<link rel="stylesheet" href="{{ asset('frontend/assets/css/main.css') }}?v={{ filemtime(public_path('frontend/assets/css/main.css')) }}">
+
 
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -120,23 +121,6 @@
         font-size: 12px;
         margin-top: 5px;
         color: #333;
-    }
-</style>
-
-<style>
-    #IMAGE60 {
-        width: 422.238px;
-        height: 395.679px;
-        top: 0px;
-        left: 0px;
-    }
-
-    #IMAGE60>.ladi-image>.ladi-image-background {
-        width: 422.855px;
-        height: 233.855px;
-        top: 0;
-        left: -2.98407px;
-        background-image: url("https://w.ladicdn.com/s750x750/5e69a8046e15317a387252bb/459030603_510614471720970_5058502378438474689_n-20240912095736-7werk.jpg");
     }
 </style>
 

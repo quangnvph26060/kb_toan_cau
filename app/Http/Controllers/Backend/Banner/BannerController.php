@@ -46,7 +46,7 @@ class BannerController extends Controller
 
         if ($request->hasFile('image_i20')) {
             deleteImage($banner->image_i20);
-            $validated['image_i20'] = saveImages($request, 'image_i20', 'banners', 750, 2053);
+            $validated['image_i20'] = saveImages($request, 'image_i20', 'banners', 935, 2560);
         }
 
         if ($request->hasFile('image_i52')) {

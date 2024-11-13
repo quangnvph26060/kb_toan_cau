@@ -26,6 +26,7 @@ class Config extends Model
         'link_video_v2',
         'link_video_main',
         'link_video_v3',
+        'link_video_v4',
         'custom_header'
     ];
 

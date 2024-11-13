@@ -77,6 +77,19 @@
             </div>
         </div>
 
+        <div id="SECTION54" class="ladi-section">
+            <div class="ladi-section-background"></div>
+            <div class="ladi-container">
+                <div id="IMAGE60" class="ladi-element">
+                    <div class="ladi-image">
+                        <div class="ladi-image-background"
+                            style="background-image: url({{ asset('frontend/assets/images/17314616756734022b92c92.jpg') }})">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="SECTION32" class="ladi-section">
 
             @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_main])
@@ -84,17 +97,7 @@
         </div>
 
 
-        <div id="SECTION54" class="ladi-section">
-            <div class="ladi-section-background"></div>
-            <div class="ladi-container">
-                <div id="IMAGE60" class="ladi-element">
-                    <div class="ladi-image">
-                        <div class="ladi-image-background"
-                            style="background-image: url({{asset('frontend/assets/images/17314616756734022b92c92.jpg')}})"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
         <div id="SECTION46" class="ladi-section">
             <div class="ladi-section-background"></div>
@@ -166,13 +169,41 @@
 
         </div>
 
+
+
         <div id="SECTION54" class="ladi-section">
             <div class="ladi-section-background"></div>
             <div class="ladi-container">
                 <div id="IMAGE60" class="ladi-element">
                     <div class="ladi-image">
                         <div class="ladi-image-background"
-                            style="background-image: url({{asset('frontend/assets/images/17314616756734022b92c92.jpg')}})"></div>
+                            style="background-image: url({{ asset('frontend/assets/images/17314616756734022b92c92.jpg') }})">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="SECTION46" class="ladi-section" style="height: 295px !important">
+            <div class="ladi-section-background"></div>
+            <div class="ladi-container">
+                <div id="GALLERY16" class="ladi-element">
+                    <div class="ladi-gallery ladi-gallery-bottom">
+                        <div class="ladi-gallery-view">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/4cr3O7shTx0?si=sxMYdPE_g-IUtzj-"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="BUTTON50" style="height: 63.0004px !important;" class="ladi-element">
+                <div class="ladi-button">
+                    <div class="ladi-button-background"></div>
+                    <div id="BUTTON_TEXT50" class="ladi-element ladi-button-headline">
+                        <p class="ladi-headline" style="padding-top: 6px;">MIỄN PHÍ THẢI ĐỘC BẰNG <br> PHƯƠNG PHÁP GUASHA</p>
                     </div>
                 </div>
             </div>
@@ -185,19 +216,15 @@
 
         </div>
 
-
-
-
-
         <div id="SECTION20" class="ladi-section">
 
             @include('frontend/breadcrumbs/section_20')
 
         </div>
 
-        <div id="SECTION32" class="ladi-section">
+        <div id="SECTION32" class="ladi-section" style="height: 243.226px !important;">
 
-            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v3])
+            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v4])
 
         </div>
 
@@ -207,7 +234,8 @@
                 <div id="IMAGE60" class="ladi-element">
                     <div class="ladi-image">
                         <div class="ladi-image-background"
-                            style="background-image: url({{asset('frontend/assets/images/17314616756734022b92c92.jpg')}})"></div>
+                            style="background-image: url({{ asset('frontend/assets/images/17314616756734022b92c92.jpg') }})">
+                        </div>
                     </div>
                 </div>
             </div>

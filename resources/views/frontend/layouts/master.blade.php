@@ -92,7 +92,7 @@
 
         <div id="SECTION32" class="ladi-section">
 
-            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_main])
+            @include('frontend/breadcrumbs/section_32', ['link' => getYouTubeVideoId($config->link_video_main)])
 
         </div>
 
@@ -153,13 +153,13 @@
 
         <div id="SECTION32" class="ladi-section">
 
-            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v1])
+            @include('frontend/breadcrumbs/section_32', ['link' => getYouTubeVideoId($config->link_video_v1)])
 
         </div>
 
         <div id="SECTION32" class="ladi-section" style="padding-top: 6px !important; height: 246.226px;">
 
-            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v2])
+            @include('frontend/breadcrumbs/section_32', ['link' => getYouTubeVideoId($config->link_video_v2)])
 
         </div>
 
@@ -184,17 +184,14 @@
             </div>
         </div>
 
-        <div id="SECTION46" class="ladi-section" style="height: 295px !important">
+        <div id="SECTION46" class="ladi-section" style="height: 378.4px !important">
             <div class="ladi-section-background"></div>
             <div class="ladi-container">
                 <div id="GALLERY16" class="ladi-element">
                     <div class="ladi-gallery ladi-gallery-bottom">
                         <div class="ladi-gallery-view">
-                            {{-- <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/4cr3O7shTx0?si=sxMYdPE_g-IUtzj-"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> --}}
+                            <iframe width="100%" style="height: 315px !important" src="https://www.youtube.com/embed/{{getYouTubeVideoId($config->shorts_video_v1)}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                         </div>
                     </div>
                 </div>
@@ -224,7 +221,7 @@
 
         <div id="SECTION32" class="ladi-section" style="height: 243.226px !important;">
 
-            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v3])
+            @include('frontend/breadcrumbs/section_32', ['link' => getYouTubeVideoId($config->link_video_v3)])
 
         </div>
 

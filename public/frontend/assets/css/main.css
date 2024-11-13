@@ -299,7 +299,7 @@
 #GALLERY16 {
     width: 420.284px;
     height: 324.44px;
-    top: 53px;
+    top: 63px;
     left: 0px;
 }
 
@@ -372,6 +372,7 @@
 
 #BUTTON_TEXT31 {
     padding-top: 8px;
+    padding-bottom: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;

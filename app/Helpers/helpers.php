@@ -100,3 +100,20 @@ function deleteImage($path)
         Storage::disk('public')->delete($path);
     }
 }
+
+// Ví dụ trong Controller hoặc Model
+
+function getYouTubeVideoId($url)
+{
+    // Kiểm tra nếu là URL của YouTube Shorts
+    if (preg_match('/(?:https?:\/\/)?(?:www\.)?youtube\.com\/shorts\/([a-zA-Z0-9_-]+)/', $url, $matches)) {
+        return $matches[1];  // Trả về video ID
+    }
+
+    // Kiểm tra nếu là URL của video YouTube thông thường
+    if (preg_match('/(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)/', $url, $matches)) {
+        return $matches[1];  // Trả về video ID
+    }
+
+    return null;  // Nếu không tìm thấy ID
+}

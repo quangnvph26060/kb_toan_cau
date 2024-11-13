@@ -141,7 +141,7 @@
 
         </div>
 
-        <div id="SECTION32" class="ladi-section" style="padding-top: 10px !important">
+        <div id="SECTION32" class="ladi-section" style="padding-top: 6px !important; height: 246.226px;">
 
             @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v2])
 
@@ -151,6 +151,18 @@
 
             @include('frontend/breadcrumbs/section_38')
 
+        </div>
+
+        <div id="SECTION54" class="ladi-section">
+            <div class="ladi-section-background"></div>
+            <div class="ladi-container">
+                <div id="IMAGE60" class="ladi-element">
+                    <div class="ladi-image">
+                        <div class="ladi-image-background"
+                            style="background-image: url({{asset('frontend/assets/images/17314616756734022b92c92.jpg')}})"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -175,6 +187,19 @@
             @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v3])
 
         </div>
+
+        <div id="SECTION54" class="ladi-section">
+            <div class="ladi-section-background"></div>
+            <div class="ladi-container">
+                <div id="IMAGE60" class="ladi-element">
+                    <div class="ladi-image">
+                        <div class="ladi-image-background"
+                            style="background-image: url({{asset('frontend/assets/images/17314616756734022b92c92.jpg')}})"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div id="SECTION6" class="ladi-section">
 

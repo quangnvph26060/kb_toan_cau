@@ -37,9 +37,11 @@ class ConfigWebsiteController extends Controller
             'link_video_v2' => 'nullable|string',
             'link_video_main' => 'nullable|string',
             'link_video_v3' => 'nullable|string',
-            'link_video_v4' => 'nullable|string',
+            'shorts_video_v1' => 'nullable|string|max:255',
+            'shorts_video_v2' => 'nullable|string|max:255',
             'custom_header' => 'nullable|string',
             'banner' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            
             // 'branch_names.*' => 'required|string|max:255',
             // 'branch_addresses.*' => 'required|string|max:500',
             // 'deleted_branch_ids.*' => 'nullable|exists:branches,id' // Ensure the deleted branch IDs are valid

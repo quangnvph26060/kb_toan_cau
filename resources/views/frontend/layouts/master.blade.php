@@ -224,7 +224,7 @@
 
         <div id="SECTION32" class="ladi-section" style="height: 243.226px !important;">
 
-            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v4])
+            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v3])
 
         </div>
 

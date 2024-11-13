@@ -184,7 +184,7 @@
             </div>
         </div>
 
-        <div id="SECTION46" class="ladi-section" style="height: 295px !important">
+        {{-- <div id="SECTION46" class="ladi-section" style="height: 295px !important">
             <div class="ladi-section-background"></div>
             <div class="ladi-container">
                 <div id="GALLERY16" class="ladi-element">
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div id="BUTTON50" style="height: 63.0004px !important;" class="ladi-element">
                 <div class="ladi-button">
                     <div class="ladi-button-background"></div>

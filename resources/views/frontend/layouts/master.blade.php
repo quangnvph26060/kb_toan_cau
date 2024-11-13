@@ -83,6 +83,19 @@
 
         </div>
 
+
+        <div id="SECTION54" class="ladi-section">
+            <div class="ladi-section-background"></div>
+            <div class="ladi-container">
+                <div id="IMAGE60" class="ladi-element">
+                    <div class="ladi-image">
+                        <div class="ladi-image-background"
+                            style="background-image: url({{asset('frontend/assets/images/17314616756734022b92c92.jpg')}})"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="SECTION46" class="ladi-section">
             <div class="ladi-section-background"></div>
             <div class="ladi-container">

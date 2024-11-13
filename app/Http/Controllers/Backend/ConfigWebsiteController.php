@@ -37,6 +37,7 @@ class ConfigWebsiteController extends Controller
             'link_video_v2' => 'nullable|string',
             'link_video_main' => 'nullable|string',
             'link_video_v3' => 'nullable|string',
+            'link_video_v4' => 'nullable|string',
             'custom_header' => 'nullable|string',
             'banner' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             // 'branch_names.*' => 'required|string|max:255',

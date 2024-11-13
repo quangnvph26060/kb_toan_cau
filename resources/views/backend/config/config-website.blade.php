@@ -72,7 +72,7 @@
 
                             <div class="col-lg-12 mt-3">
                                 <div class="form-group">
-                                    <label for="link_video_main" class="form-label">Link Video Main</label>
+                                    <label for="link_video_main" class="form-label">Link Video 1</label>
                                     <input type="text" class="form-control" id="link_video_main" name="link_video_main"
                                         placeholder="Link Video Main"
                                         value="{{ old('link_video_main', $config->link_video_main) }}" />
@@ -81,7 +81,7 @@
 
                             <div class="col-lg-12 mt-3">
                                 <div class="form-group">
-                                    <label for="link_video_v1" class="form-label">Link Video Header</label>
+                                    <label for="link_video_v1" class="form-label">Link Video 2</label>
                                     <input type="text" class="form-control" id="link_video_v1" name="link_video_v1"
                                         placeholder="Link Video Header"
                                         value="{{ old('link_video_v1', $config->link_video_v1) }}" />
@@ -90,7 +90,7 @@
 
                             <div class="col-lg-12 mt-3">
                                 <div class="form-group">
-                                    <label for="link_video_v2" class="form-label">Link Video Body</label>
+                                    <label for="link_video_v2" class="form-label">Link Video 3</label>
                                     <input type="text" class="form-control" id="link_video_v2" name="link_video_v2"
                                         placeholder="Link Video Body"
                                         value="{{ old('link_video_v2', $config->link_video_v2) }}" />
@@ -99,10 +99,19 @@
 
                             <div class="col-lg-12 mt-3">
                                 <div class="form-group">
-                                    <label for="link_video_v3" class="form-label">Link Video Footer</label>
+                                    <label for="link_video_v3" class="form-label">Link Video 4</label>
                                     <input type="text" class="form-control" id="link_video_v3" name="link_video_v3"
                                         placeholder="Link Video Footer"
                                         value="{{ old('link_video_v3', $config->link_video_v3) }}" />
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 mt-3">
+                                <div class="form-group">
+                                    <label for="link_video_v4" class="form-label">Link Video 5</label>
+                                    <input type="text" class="form-control" id="link_video_v4" name="link_video_v4"
+                                        placeholder="Link Video Footer"
+                                        value="{{ old('link_video_v4', $config->link_video_v4) }}" />
                                 </div>
                             </div>
 

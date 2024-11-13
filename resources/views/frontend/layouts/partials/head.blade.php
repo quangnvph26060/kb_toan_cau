@@ -12,7 +12,15 @@
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 
 
-
+<style>
+    html,
+    body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0;
+        padding: 0;
+    }
+</style>
 
 @include('frontend/layouts/partials/style')
 

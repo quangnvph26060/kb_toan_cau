@@ -184,7 +184,7 @@
             </div>
         </div>
 
-        <div id="SECTION46" class="ladi-section" style="height: 295px !important">
+        {{-- <div id="SECTION46" class="ladi-section" style="height: 295px !important">
             <div class="ladi-section-background"></div>
             <div class="ladi-container">
                 <div id="GALLERY16" class="ladi-element">
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div id="BUTTON50" style="height: 63.0004px !important;" class="ladi-element">
                 <div class="ladi-button">
                     <div class="ladi-button-background"></div>
@@ -224,7 +224,7 @@
 
         <div id="SECTION32" class="ladi-section" style="height: 243.226px !important;">
 
-            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v4])
+            @include('frontend/breadcrumbs/section_32', ['link' => $config->link_video_v3])
 
         </div>
 

@@ -184,21 +184,21 @@
             </div>
         </div>
 
-        {{-- <div id="SECTION46" class="ladi-section" style="height: 295px !important">
+        <div id="SECTION46" class="ladi-section" style="height: 295px !important">
             <div class="ladi-section-background"></div>
             <div class="ladi-container">
                 <div id="GALLERY16" class="ladi-element">
                     <div class="ladi-gallery ladi-gallery-bottom">
                         <div class="ladi-gallery-view">
-                            <iframe width="560" height="315"
+                            {{-- <iframe width="560" height="315"
                                 src="https://www.youtube.com/embed/4cr3O7shTx0?si=sxMYdPE_g-IUtzj-"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> --}}
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
             <div id="BUTTON50" style="height: 63.0004px !important;" class="ladi-element">
                 <div class="ladi-button">
                     <div class="ladi-button-background"></div>
